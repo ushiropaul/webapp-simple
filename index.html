@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>App de Alumnos</title>
+  <link rel="icon" href="data:,">
 </head>
 <body>
   <h1>Lista de Alumnos</h1>
@@ -13,10 +14,10 @@
   <input id="apellido" placeholder="Apellido" />
   <button onclick="agregarAlumno()">Agregar</button>
 
-  <!-- CARGA PRIMERO la librería de Supabase -->
+  <!-- Carga primero la librería de Supabase -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
   
-  <!-- LUEGO carga tu script personalizado -->
-  <script src="js/main.js"></script>
+  <!-- Luego tu script, con defer para que espere al DOM y a supabase-js -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
